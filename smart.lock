@@ -1,0 +1,25 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "iron-router": {
+        "version": "0.6.4"
+      },
+      "nprogress": {
+        "version": "0.0.3"
+      }
+    },
+    "packages": {
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.6.4",
+        "commit": "927bbaed1b87894fb6fb70807f74ff3a5bd89f29"
+      },
+      "nprogress": {
+        "git": "https://github.com/zhouzhuojie/meteor-nprogress.git",
+        "tag": "v0.0.3",
+        "commit": "ffd1c5dd400af64121197f4e637a215c4b6b1fc7"
+      }
+    }
+  }
+}
