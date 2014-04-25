@@ -45,13 +45,13 @@ Router.map(function () {
    * The route's path is "/contacts"
    * The route's template is inferred to be "contacts"
    */
-  this.route('contacts', {
-    path: '/contacts',
+  this.route('view2', {
+    path: '/view2',
     
     // before hooks are run before your action
     before: [
       function () {
-        this.subscribe('allContacts'); // don't wait
+        //this.subscribe('allContacts'); // don't wait
       },
 
       function () {
@@ -75,8 +75,8 @@ Router.map(function () {
     
   });
 
-  this.route('contact', {
-    path: '/contacts/:_name',
+  this.route('view1', {
+    path: '/view1',
 
     load: function () {
       // called on first load
@@ -85,8 +85,8 @@ Router.map(function () {
     // before hooks are run before your action
     before: [
       function () {
-        console.log("this.params._name: ", this.params._name);
-        this.subscribe('myContact', this.params._name).wait(); // wait
+       // console.log("this.params._name: ", this.params._name);
+        //this.subscribe('myContact', this.params._name).wait(); // wait
       },
 
       function () {
@@ -101,9 +101,9 @@ Router.map(function () {
     ],
 
     action: function () {
-      var params = this.params; // including query params
-      var hash = this.hash;
-      var isFirstRun = this.isFirstRun;
+      //var params = this.params; // including query params
+      //var hash = this.hash;
+      //var isFirstRun = this.isFirstRun;
 
       this.render(); // render all
       //this.render('specificTemplate', {to: 'namedYield'});

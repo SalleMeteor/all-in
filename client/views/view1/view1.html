@@ -1,11 +1,107 @@
 <template name="view1">
-  <h1>Hello World from view1!</h1>
-  {{greeting}}
-  
-  <p>
-    Name: <input id="name" type="text" /><br/>
-    Surname: <input id="surname" type="text" /><br/>
-    Age: <input id="age" type="number" /> years old<br/>
-    <input id="button" class="btn btn-primary" type="button" value="Click" />
-  </p>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<h2> <img src="/images/dollar.png" width="50" height="50">  
+        Welcome to the new website BetIt!
+      </h2>
+			<br><br>
+			<div class="row clearfix">
+				<div class="col-md-6 column">
+					<p>
+						
+						<b>This is an experimental website for betting and learning Meteor JS.</b>
+
+						<br><br>
+
+						On this website you can bet for a match and simulate it and see if you have won or not. <br>
+						On the right, you can see the last bets.
+						On the bottom, you can find the best matches to bet and simulate. <br><br><b>Wanna fun? Wanna BetIT!</b><br><br>
+
+						<i>Simulated matches</i><hr>
+						R. Madrid - F.C. Barcelona : <b>{{resultat1}}</b> |  {{missatge1}}<br><br>
+
+						R. Sociedad - RCD Espanyol :  <b> {{resultat2}} </b> |  {{missatge2}} <br><br>
+
+					</p>
+				</div>
+				<div class="col-md-6 column">
+					<table class="table">
+						<thead>
+							<tr class="danger">
+								<th>
+									#
+								</th>
+								<th>
+									Last bets
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each lastbets}}
+							<tr class="success">
+								<td>
+									#
+								</td>
+								<td>
+									{{this}}
+								</td>
+								
+							</tr>
+							{{/each}}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix" style="margin-top:10px;">
+		<div class="col-md-4 column" style="border-right:1px solid black;">
+			<h2>
+				R. Madrid - FC Barcelona
+			</h2>
+			<p>
+				<b>El Clásico</b><br><br>We don't need to say anything more.<br>The perfect match for betting: this game will decide 'La Liga'. CR9, Messi, Pinto... will you lose it? 
+			</p>
+		
+			<div class="row clearfix">
+				<div class="col-md-6 column">
+					 <input id="partit1" type="button" value="Click" />  
+				</div>
+				<div class="col-md-6 column">
+					 <input id="sim_partit1" type="button" value="Simulate match" />
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 column"  style="border-right:1px solid black;">
+			<h2>
+				Real Sociedad - RCDE
+			</h2>
+			<p>
+				<b>UEFA League 1/2</b><br><br> RCDE needs to score two goals at least to tie the game. No one knows who will win, we just know that it is a must match to watch. Start betting and win $ !
+			</p>
+		
+			<div class="row clearfix">
+				<div class="col-md-6 column">
+					 <input id="partit2" type="button" value="Click" />  
+				</div>
+				<div class="col-md-6 column">
+					 <input id="sim_partit2" type="button" value="Simulate match" />
+
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 column">
+			<h2>
+				<i>[SPONSOR]</i> La Salle BCN
+			</h2>
+			<p>
+				La Salle presents a new model of school. <br><br>A school which offers an innovative and holistic programme of: management, engineering, architecture and entrepreneurship. 
+			</p>
+			
+		</div>
+	</div>
+</div>
+    
 </template>

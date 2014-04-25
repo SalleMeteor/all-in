@@ -1,7 +1,5 @@
 <template name="home">
-  <h1>Hompage</h1>
-  
-  {{> loginButtons}}
+ 
   
   {{#if currentUser}}
   
@@ -13,10 +11,12 @@
       <p>page not found</p>
     {{/if}}{{/if}}
   
-    <input id="contacts" class="btn btn-primary" type="button" value="Show contacts" />
+   <!-- <input id="contacts" class="btn btn-primary" type="button" value="Show contacts" /> -->
   
   {{else}}
-    <h3>You need to login to continue</h3>  
+    <img src="/images/dollar.png" width="50" height="50" style="margin-left:46%;margin-top:20%;">
+    <h3 style="margin-left:30%;">Login to continue and discover our beta v.01</h3>
+     <span style="margin-left:46%;">{{> loginButtons}}</span>  
   {{/if}}
   
 </template>

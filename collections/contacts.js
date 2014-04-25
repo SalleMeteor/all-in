@@ -1,4 +1,5 @@
 Contacts = new Meteor.Collection("contacts");
+Apostes = new Meteor.Collection("apostes");
 
 Contacts.allow({
   insert: function() {
@@ -7,6 +8,18 @@ Contacts.allow({
   update: function() {
     return true;
   },	
+  remove: function() {
+    return true;
+  }
+});
+
+Apostes.allow({
+  insert: function() {
+    return true;
+  },
+  update: function() {
+    return true;
+  },  
   remove: function() {
     return true;
   }

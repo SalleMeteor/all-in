@@ -1,14 +1,104 @@
 <template name="view2">
-  <h1>Hello World from view2!</h1>
-  {{greeting}}
-  <input class="btn btn-success" type="button" value="Click" />
-  <br/>
-  <img src="/images/lasalle.jpg">  
-  
-  <ul>
-    {{#each contact}}
-      <li>Name: {{name}}</li>
-    {{/each}}
-  </ul>
-  
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-12 column">
+       
+
+      <h2> <img src="/images/dollar.png" width="50" height="50">  
+        Welcome to the new website BetIt!
+      </h2>
+      <br><br>
+      <div class="row clearfix">
+        <div class="col-md-6 column">
+          <p>
+                      
+        <input class="btn btn-success" type="button" value="Go back" id="goBack" />
+
+        <h3>Resultat partit</h3><hr><br>
+        <p>{{local}}   <input id="local" type="text" /></p>
+        
+        <p>{{visitant}}   <input id="visitant" type="text" />
+         </p>
+<br>
+          <input id="Aposta" class="btn btn-primary" type="button" value="Aposta" />
+       
+      
+          </p>
+        </div>
+        <div class="col-md-6 column">
+          <table class="table">
+            <thead>
+              <tr class="danger">
+                <th>
+                  #
+                </th>
+                <th>
+                  Last bets
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each lastbets}}
+              <tr class="success">
+                <td>
+                  #
+                </td>
+                <td>
+                  {{this}}
+                </td>
+                
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class="row clearfix" style="margin-top:10px;">
+    <div class="col-md-4 column" style="border-right:1px solid black;">
+      <h2>
+        R. Madrid - FC Barcelona
+      </h2>
+      <p>
+        <b>El Clásico</b><br><br>We don't need to say anything more.<br>The perfect match for betting: this game will decide 'La Liga'. CR9, Messi, Pinto... will you lose it? 
+      </p>
+    
+      <div class="row clearfix">
+        <div class="col-md-6 column">
+        </div>
+        <div class="col-md-6 column">
+
+        </div>
+      </div>
+    </div>
+   <div class="col-md-4 column" style="border-right:1px solid black;">
+      <h2>
+        Real Sociedad - RCDE
+      </h2>
+      <p>
+        <b>UEFA League 1/2</b><br><br> RCDE needs to score two goals at least to tie the game. No one knows who will win, we just know that it is a must match to watch. Start betting and win $ !
+      </p>
+    
+      <div class="row clearfix">
+        <div class="col-md-6 column">
+          
+        </div>
+        <div class="col-md-6 column">
+
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 column">
+      <h2>
+        <i>[SPONSOR]</i> La Salle BCN
+      </h2>
+      <p>
+        La Salle presents a new model of school. <br><br>A school which offers an innovative and holistic programme of: management, engineering, architecture and entrepreneurship. 
+      </p>
+      
+    </div>
+  </div>
+</div>
+    
 </template>
