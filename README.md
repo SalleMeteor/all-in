@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 final-example
 =============
 
@@ -12,3 +13,7 @@ After cloning this repository locally, manually add the following Atmosphere pac
 And finally start you App as always:
 
 - $ meteor
+=======
+all-in
+======
+>>>>>>> 5abe8e144c267928d46d6463ebc82b9fb9b6058f
