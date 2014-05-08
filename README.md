@@ -1,8 +1,5 @@
 Betit (old All-in)
 ==================
-
-App description 
-===============
 Website with inital login where you can bet for football matches and simulate them. Moreover, depends on your bet, you can win (or lose!).
 
 It uses 
